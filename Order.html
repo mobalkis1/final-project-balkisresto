@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Food Ordering Website</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i> Balkis resto</a>
+
+    <nav class="navbar">
+         <a href="index.html">home</a>
+        <a href="Dishes.html">dishes</a>
+       
+        <a href="Menu.html">menu</a>
+        <a href="Order.html">order</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        
+        <a href="login.html"><class="fa fa-user" aria-hidden="true"></i><span>Login</span></a>
+        
+    </div>
+
+</header>
+
+
+<section class="order" id="order">
+
+    <h3 class="sub-heading"> order now </h3>
+    <h1 class="heading"> free and fast </h1>
+
+    <form action="insert_order.php" method="post">
+
+
+        <div class="inputBox">
+            <div class="input">
+                <span>your name</span>
+                <input type="text"  id="name" name="name" placeholder="enter your name">
+            </div>
+            <div class="input">
+                <span>your phone number</span>
+                <input type="number" id="number" name="number" placeholder="enter your number">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your order</span>
+                <input type="text"  id="order" name="order" placeholder="enter food name">
+            </div>
+            <div class="input">
+                <span>additional food</span>
+                <input type="test" id="af" name="af" placeholder="extra with food">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>Quantity</span>
+                <input type="number"  id="quantity" name="quantity" placeholder="how many orders">
+            </div>
+            <div class="input">
+                <span>date and time</span>
+                <input type="datetime-local"id ="dt" name="dt">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your address</span>
+                <textarea  placeholder="enter your address"  id="add" name="add" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <span>your message</span>
+                <textarea  placeholder="enter your message" id="msg" name="msg" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+        <button class="btn" onclick="check_empty()">Order</button> 
+
+    </form>
+
+</div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="order.js"></script>
+
+</section>
+</body>
+</html>
